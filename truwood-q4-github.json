@@ -1,0 +1,1193 @@
+{
+  "project_title": "TruWood Q4",
+  "labels": [
+    {
+      "name": "owner:taylor",
+      "color": "D4A373",
+      "description": "Taylor"
+    },
+    {
+      "name": "owner:nolan",
+      "color": "A3B18A",
+      "description": "Nolan"
+    },
+    {
+      "name": "owner:gbe",
+      "color": "9A8C98",
+      "description": "GBE (external)"
+    },
+    {
+      "name": "owner:charlie",
+      "color": "8DA9C4",
+      "description": "Charlie"
+    },
+    {
+      "name": "owner:j",
+      "color": "C9ADA7",
+      "description": "J"
+    },
+    {
+      "name": "owner:kaydee",
+      "color": "DCC6B0",
+      "description": "Kaydee"
+    },
+    {
+      "name": "type:build",
+      "color": "E9EDC9",
+      "description": "Campaign production work"
+    },
+    {
+      "name": "type:website",
+      "color": "CCD5AE",
+      "description": "Storefront build work"
+    },
+    {
+      "name": "type:decision",
+      "color": "E9C46A",
+      "description": "Needs a decision before work can start"
+    },
+    {
+      "name": "type:site-change",
+      "color": "2F4A3A",
+      "description": "A live storefront change on the day"
+    },
+    {
+      "name": "type:qa",
+      "color": "BDE0FE",
+      "description": "Testing"
+    },
+    {
+      "name": "type:support",
+      "color": "FFD6A5",
+      "description": "Customer support prep"
+    },
+    {
+      "name": "type:content",
+      "color": "CDB4DB",
+      "description": "Writing and adding page content"
+    },
+    {
+      "name": "blocked",
+      "color": "A33A2A",
+      "description": "Cannot proceed - say why in a comment"
+    },
+    {
+      "name": "in-progress",
+      "color": "3F7A52",
+      "description": "Someone is actively working on this"
+    },
+    {
+      "name": "risk",
+      "color": "E07A5F",
+      "description": "Flagged in the risk register"
+    }
+  ],
+  "milestones": [
+    {
+      "title": "October - Acquisition",
+      "due_on": "2026-11-01T23:59:59Z",
+      "description": "15% off sitewide, cold traffic only"
+    },
+    {
+      "title": "Phase 1 - Hype",
+      "due_on": "2026-11-08T23:59:59Z",
+      "description": "No discount. Teasers and opt-ins"
+    },
+    {
+      "title": "Phase 2 - Bundles",
+      "due_on": "2026-11-16T23:59:59Z",
+      "description": "Gift bundles 20% off. VIP Nov 9, public Nov 10"
+    },
+    {
+      "title": "Phase 3 - Product Drop",
+      "due_on": "2026-11-23T23:59:59Z",
+      "description": "4 watches + 3 sunglasses. No sitewide discount"
+    },
+    {
+      "title": "Phase 4 - BOGO 75%",
+      "due_on": "2026-11-30T23:59:59Z",
+      "description": "BOGO 75% sitewide. VIP Nov 24-26, public Nov 27-30"
+    },
+    {
+      "title": "Giving Tuesday",
+      "due_on": "2026-12-01T23:59:59Z",
+      "description": "No discount. 5 trees planted per order"
+    },
+    {
+      "title": "Green Monday",
+      "due_on": "2026-12-14T23:59:59Z",
+      "description": "Free US + International Express shipping"
+    },
+    {
+      "title": "Christmas Sale",
+      "due_on": "2026-12-20T23:59:59Z",
+      "description": "BOGO 75% + $25 January gift card"
+    },
+    {
+      "title": "Gift Card Window",
+      "due_on": "2026-12-25T23:59:59Z",
+      "description": "No discount. Digital gift cards only"
+    },
+    {
+      "title": "Gift Yourself",
+      "due_on": "2027-01-04T23:59:59Z",
+      "description": "BOGO 75%, self-gifting angle. Ends Jan 4"
+    }
+  ],
+  "issues": [
+    {
+      "title": "Upload new watch and sunglasses SKUs to Shopify and set products to Draft status",
+      "body": "**Work on it by:** Tuesday 27 October 2026\n\n### Why it matters\nShopify product SKUs created and saved as Drafts\n\n### Details\n- **Owner:** Charlie\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Original checklist deadline:** Oct 20 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:charlie",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-27",
+      "status": "In Progress"
+    },
+    {
+      "title": "Confirm shipping of new products",
+      "body": "**Work on it by:** Tuesday 27 October 2026\n\n### Why it matters\nProvide estimated arrival dates to Taylor and J and create ASN in Shipmonk\n\n### Details\n- **Owner:** Charlie\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Original checklist deadline:** Oct 20 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:charlie",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-27",
+      "status": "In Progress"
+    },
+    {
+      "title": "Design email content and creatives for Teaser Campaign",
+      "body": "**Work on it by:** Tuesday 27 October 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** GBE\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Original checklist deadline:** Oct 26 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Duplicate Live theme to 'TIMBERLINE - Staging' and park a 'Pre-Q4 baseline' copy",
+      "body": "**Work on it by:** Tuesday 27 October 2026\n\n### Why it matters\nEverything below runs through Staging. Baseline is the untouched fallback for the whole quarter.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes.\n2. On TIMBERLINE (the live one), open the ... menu and choose Duplicate. Rename the copy 'TIMBERLINE - Staging'. This is where all code work happens from now on.\n3. Duplicate it once more and name it 'Pre-Q4 baseline'. Do not touch this one again all quarter - it is the last resort if something goes badly wrong in December.\n4. Delete any other old themes in the library so the list stays readable under pressure. Keep at most four.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** October - Acquisition\n- **Type:** Website\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Web Assets for BFCM & Christmas (Hero image, sticky banner, 'Who We're For' page, Category imagery)",
+      "body": "**Work on it by:** Tuesday 27 October 2026\n\n### Why it matters\nFull desktop & mobile web graphic kit for holiday takeover\n\n### How to do it\n\n1. Two sets of artwork: one for Black Friday / Cyber Monday, one for the Christmas Sale. Nolan has already built empty hero sections waiting for them.\n2. Hero image: 2880 x 1400 px, JPEG, under 400KB. It must be this shape or it gets cropped. Save as JPEG, not PNG - PNG is several times larger and slows the page down.\n3. Keep the top 160px clear. The logo and navigation sit on top of the hero, so anything important up there disappears behind them.\n4. Compose for a tall crop as well. On phones the hero is much taller and narrower, so the sides get cut off - keep the watch and any text near the centre.\n5. The sticky banner is text, not a picture. Write the line (about 60 characters) and give Nolan the background and text colours as hex codes.\n6. Category imagery: open Shopify > Content > Files, find the current collection banners and match their dimensions. Leave the artwork clean - the existing ones have a grey panel baked into the picture, which is why text sometimes sits on the wrong background.\n7. Name files phase-first so Nolan can find them: phase4-bfcm-hero.jpg, christmas-hero.jpg.\n8. Upload to Shopify > Content > Files and comment here when they are up.\n9. Headlines are Bricolage Grotesque, body is Work Sans. Forest green #2F4A3A, cream #F4EEE3.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** October - Acquisition\n- **Type:** Website\n- **Original checklist deadline:** Oct 5 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:website"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Feed & Story graphics for Hype",
+      "body": "**Work on it by:** Tuesday 27 October 2026\n\n### Why it matters\nTeaser graphics & story assets\n\n### Details\n- **Owner:** Taylor\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Original checklist deadline:** Oct 26 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Build HERO sections for Phases 1-4 on the homepage, hidden, with placeholder images",
+      "body": "**Work on it by:** Wednesday 28 October 2026\n\n### Why it matters\nTurns four phase launches into four 2-minute toggles. Does not wait on Taylor's asset kit.\n\n### How to do it\n\n1. Open TIMBERLINE - Staging in the customizer, on the Home page.\n2. Duplicate the existing hero carousel section four times.\n3. Rename each with its date in the name: 'HERO - Phase 1 Hype (Nov 2)', 'HERO - Phase 2 Bundles (Nov 9)', 'HERO - Phase 3 Drop (Nov 17)', 'HERO - Phase 4 BOGO (Nov 24)'.\n4. On each one set: How the banner is sized = Fit the artwork; Artwork shape = 2880 / 1400; Maximum height = 90%; Mobile height = 80%.\n5. Drop in a flat #2F4A3A placeholder at 2880x1400 with the phase name written on it, so a placeholder that reaches the live site by accident is obvious rather than subtle.\n6. Set the headline, button text and button link for each phase.\n7. Hide all four with the eye icon.\n8. Test each one: unhide, check desktop and mobile preview, re-hide. This is the cheap moment to find a sizing problem.\n9. Publish Staging, then immediately re-duplicate Live back to Staging.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** October - Acquisition\n- **Type:** Website\n- **Original checklist deadline:** Oct 8 (store takeover) (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-28",
+      "status": "Todo"
+    },
+    {
+      "title": "DECISION 1: confirm the sunglasses drop date (recommend Nov 17 with the watches)",
+      "body": "**Work on it by:** Thursday 29 October 2026\n\n### Why it matters\nBlocks Charlie's SKU upload and all Phase 3 creative.\n\n### How to do it\n\n1. The question: do the three sunglasses drop on Nov 17 with the watches, or separately on Dec 7?\n2. The checklist overview, the November calendar and deck slide 5 all say Nov 17. Deck slide 6 and the slide 13 matrix say Dec 7.\n3. Two things point to Nov 17: the Nov 17 email copy is already written as '4 watches + 3 sunglasses just dropped', and there is no Dec 7 send anywhere in the December calendar to support a standalone drop.\n4. This blocks Charlie's SKU upload and every piece of Phase 3 creative, so it cannot wait.\n5. Comment the decision here and tell Charlie and Taylor directly.\n\n### Details\n- **Owner:** J / Taylor\n- **Phase:** October - Acquisition\n- **Type:** Decision\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "owner:taylor",
+        "type:decision"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-29",
+      "status": "Todo"
+    },
+    {
+      "title": "Build HERO sections for all five December phases, hidden, with placeholder images",
+      "body": "**Work on it by:** Friday 30 October 2026\n\n### Why it matters\nSame. Gets every December change built while there is time.\n\n### How to do it\n\n1. Same process as the November four, in TIMBERLINE - Staging on the Home page.\n2. Five more sections: 'HERO - Giving Tuesday (Dec 1)', 'HERO - Christmas Sale (Dec 2)', 'HERO - Green Monday (Dec 14)', 'HERO - Gift Cards (Dec 21)', 'HERO - Gift Yourself (Dec 26)'.\n3. Same settings: Fit the artwork, 2880 / 1400, 90% max, 80% mobile.\n4. Placeholders again - do not wait on finished artwork to build the structure.\n5. Hide all five, test each, then publish Staging and re-duplicate.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** October - Acquisition\n- **Type:** Website\n- **Original checklist deadline:** Oct 8 (store takeover) (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-30",
+      "status": "Todo"
+    },
+    {
+      "title": "Agree a UTM naming convention for all Q4 sends and ads",
+      "body": "**Work on it by:** Friday 30 October 2026\n\n### Why it matters\nFlagged as missing in your own strategy notes. Without it Q4 cannot be measured afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-30",
+      "status": "Todo"
+    },
+    {
+      "title": "Write the ten announcement bar lines, one per phase",
+      "body": "**Work on it by:** Saturday 31 October 2026\n\n### Why it matters\nNolan builds the empty blocks; the words are yours. Having all ten written in advance is what makes each phase day a toggle instead of a writing job.\n\n### How to do it\n\n1. One line per phase, ten in total. Each one goes in the bar across the very top of the site.\n2. Keep each to about 60 characters. Longer than that and it wraps on a phone or gets cut off.\n3. Lead with the offer, not the brand: 'BOGO 75% OFF SITEWIDE - ENDS MONDAY' works, 'TruWood Black Friday Event' does not.\n4. Where a phase has a deadline, put it in the line. Where it does not, say what is new.\n5. For each line also give the background colour and text colour as hex codes. Check they are readable together - the old banner was close to unreadable before it was fixed.\n6. Put all ten in a comment on this task so Nolan can paste them into the blocks.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** October - Acquisition\n- **Type:** Website\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:website"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-31",
+      "status": "Todo"
+    },
+    {
+      "title": "Build and schedule the three teaser emails (sends Nov 2, 6, 8)",
+      "body": "**Work on it by:** Saturday 31 October 2026\n\n### Why it matters\nFirst send is Nov 2. This is the real drop-dead date, not Oct 28.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Original checklist deadline:** Oct 28 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-31",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule social for Nov 1-8, then move to weekly batches",
+      "body": "**Work on it by:** Saturday 31 October 2026\n\n### Why it matters\nThe full Nov+Dec social calendar in one go is not achievable. Weekly batching is.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Original checklist deadline:** Oct 28 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-10-31",
+      "status": "Todo"
+    },
+    {
+      "title": "Create CTV Ad Campaign video",
+      "body": "**Work on it by:** Sunday 1 November 2026\n\n### Why it matters\nHoliday/Gifting theme\n\n### Details\n- **Owner:** J/Kaydee\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Original checklist deadline:** Nov 1 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "owner:kaydee",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-11-01",
+      "status": "Todo"
+    },
+    {
+      "title": "Update billing",
+      "body": "**Work on it by:** Sunday 1 November 2026\n\n### Why it matters\nReview SMS and email sends/profiles and make sure billing is accurate\n\n### Details\n- **Owner:** Taylor\n- **Phase:** October - Acquisition\n- **Type:** Build\n- **Original checklist deadline:** Nov 1 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "October - Acquisition",
+      "due": "2026-11-01",
+      "status": "Todo"
+    },
+    {
+      "title": "Review all ten phase states on Staging with Taylor, then publish the Phase 1 state",
+      "body": "**Work on it by:** Monday 2 November 2026\n\n### Why it matters\nLast point where a structural problem is cheap to fix.\n\n### How to do it\n\n1. Open the Staging preview link and walk through all ten hero sections with Taylor, unhiding and re-hiding each.\n2. Check on a phone as well as a laptop. Most of the traffic is mobile.\n3. Confirm every button goes where its phase needs it to.\n4. Fix anything found, then publish Staging to Live.\n5. Unhide the Phase 1 Hype hero and its announcement bar line. Hide the October ones.\n6. Re-duplicate Live to Staging so the next phase starts from what is actually live.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 1 - Hype\n- **Type:** Website\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-02",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Teaser hero + 'Something new is coming' banner",
+      "body": "**Work on it by:** Monday 2 November 2026\n\n### Why it matters\nNo offer live. Opt-in CTA only.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes, find TIMBERLINE at the top and click Customize.\n2. Check the dropdown at the top says Home page. If it does not, click it and choose Home page.\n3. In the list of sections on the left, find 'HERO - Phase 1 Hype (Nov 2)'. Hidden sections look greyed out with a crossed-out eye. Click that eye once - the section goes solid and appears in the preview.\n4. Find the hero for the October one and click its eye once so it greys out.\n5. Do the same pair of clicks on the announcement bar blocks: show today's line, hide the last one.\n6. Click Save.\n7. Open mytruwood.com on your phone, pull down to refresh, and look at the top of the page. Both the hero and the banner should be the new ones.\n8. No offer is live. The button points at the waitlist sign-up, nothing else.\n9. If it looks wrong, do not try to fix it here. Go to Online Store > Themes, find 'TIMBERLINE - Last good' and click Publish. That puts the site back in about thirty seconds and it can be sorted out afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 1 - Hype\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-02",
+      "status": "Todo"
+    },
+    {
+      "title": "Design email content and creatives for Gift Bundles sale",
+      "body": "**Work on it by:** Tuesday 3 November 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** GBE\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Nov 3 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-03",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Bundle Collection Hero Banner & Sticky Site Announcement Bar",
+      "body": "**Work on it by:** Tuesday 3 November 2026\n\n### Why it matters\nDesktop & Mobile site hero banners\n\n### How to do it\n\n1. Same specs as the BFCM artwork: hero at 2880 x 1400, JPEG, top 160px kept clear.\n2. This one needs to show several products together rather than a single watch, because the offer is bundles.\n3. The banner line is text - about 60 characters, leading with '20% off'.\n4. Upload to Shopify > Content > Files and comment here when done.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 1 - Hype\n- **Type:** Website\n- **Original checklist deadline:** Nov 3 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:website"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-03",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Ads highlighting 20% Off Bundles & Gifting messaging",
+      "body": "**Work on it by:** Tuesday 3 November 2026\n\n### Why it matters\nMeta Feed/Story & Google Display ad visuals\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Nov 3 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-03",
+      "status": "In Progress"
+    },
+    {
+      "title": "DECISION 6: confirm whether free engraving ships as planned or in a reduced form",
+      "body": "**Work on it by:** Wednesday 4 November 2026\n\n### Why it matters\nNolan builds bundle engraving the next day. ShipMonk case still open.\n\n### How to do it\n\n1. The question: does free engraving on a second order ship as planned, or in a reduced form?\n2. What makes it risky: it runs on the engraving handler in product-template.liquid, the largest and most fragile file in the theme, and ShipMonk case 00899079 is still open - swapping a watch on an imported order wipes the engraving.\n3. What it costs if it breaks: nine sends promise the perk, and a customer pays for a gift that arrives blank.\n4. The options: ship it as planned if Nolan's Nov 5 test passes end to end; limit it to orders that are not swapped at fulfilment; or replace it with a straight discount.\n5. Decide before Nov 5 so Nolan is not building against a maybe.\n6. Comment the decision here. Taylor needs it to finalise the Phase 2 sends.\n\n### Details\n- **Owner:** J / Nolan\n- **Phase:** Phase 1 - Hype\n- **Type:** Decision\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "owner:nolan",
+        "type:decision"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-04",
+      "status": "Todo"
+    },
+    {
+      "title": "Build the VIP / Past Purchasers segment",
+      "body": "**Work on it by:** Wednesday 4 November 2026\n\n### Why it matters\nNeeded for the Nov 6 VIP email. First segment required.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Oct 28 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-04",
+      "status": "Todo"
+    },
+    {
+      "title": "Lock video concepts for Phases 1 and 2",
+      "body": "**Work on it by:** Wednesday 4 November 2026\n\n### Why it matters\nPhase 2 ads go live Nov 9. Later phases can be concepted during November.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Oct 28 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-04",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule Bundle Launch Email sequence",
+      "body": "**Work on it by:** Thursday 5 November 2026\n\n### Why it matters\nKlaviyo campaign sends targeting non-purchasers\n\n### Details\n- **Owner:** GBE\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Nov 5 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-05",
+      "status": "Todo"
+    },
+    {
+      "title": "Update Klaviyo automated flows for each phase (Welcome, Cart, Post-Purchase) except October & Nov Phase 1",
+      "body": "**Work on it by:** Thursday 5 November 2026\n\n### Why it matters\nUpdated flow banners & messaging matching current sale offers\n\n### Details\n- **Owner:** GBE\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Nov 5 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-05",
+      "status": "Todo"
+    },
+    {
+      "title": "Enable engraving on all gift bundles - full order-to-fulfilment test, not just checkout",
+      "body": "**Work on it by:** Thursday 5 November 2026\n\n### Why it matters\nPhase 2 post-purchase perk depends on it. ShipMonk case 00899079 is open on this exact mechanic.\n\n### How to do it\n\n1. In Staging, add the engraving option to every gift bundle product.\n2. Place a real test order on the Staging preview with engraving text filled in.\n3. Check the engraving text reaches the Shopify order - not just the cart.\n4. Then check it reaches ShipMonk. This is the step that matters: case 00899079 is open because swapping a watch on an imported order wipes the engraving.\n5. Ask Taylor to swap the watch on that test order and confirm the engraving survives.\n6. If it does not survive, stop and tell J before any send promises free engraving.\n7. Publish to Live only once the full path works.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 1 - Hype\n- **Type:** Website\n- **Original checklist deadline:** Nov 5 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-05",
+      "status": "Todo"
+    },
+    {
+      "title": "Build Post-Purchase Flow: Unlock Free Engraving on 2nd Order through BFCM",
+      "body": "**Work on it by:** Thursday 5 November 2026\n\n### Why it matters\nAutomated post-purchase email trigger sending free engraving code\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Nov 5 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-05",
+      "status": "Todo"
+    },
+    {
+      "title": "Build & launch Campaign Ad Sets for 20% Off Bundles",
+      "body": "**Work on it by:** Thursday 5 November 2026\n\n### Why it matters\nActive Meta/Google ad campaigns\n\n### Details\n- **Owner:** Taylor/J\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Nov 5 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-05",
+      "status": "Todo"
+    },
+    {
+      "title": "Write and add the content for the Bundles landing page",
+      "body": "**Work on it by:** Saturday 7 November 2026\n\n### Why it matters\nPhase 2 opens Nov 9. The page has to be finished before the VIP email points at it.\n\n### How to do it\n\n1. Nolan has built the page shell and will comment here with the preview link. You are filling it in, not building it.\n2. Open the page in the Shopify customizer and work top to bottom.\n3. Headline: lead with what the customer gets, not the occasion. The offer is 20% off gift bundles.\n4. Subheadline: one sentence on who it is for. Gift pages convert on the recipient, not the product.\n5. Choose the products that appear and the order they appear in. Put the strongest first - most people never scroll to the third row.\n6. Each bundle needs a line explaining why those pieces go together - the value of the bundle is the point, and it is the thing the checklist flagged as missing on the PDPs.\n7. Check every button goes somewhere real, and read the whole page on a phone before you call it done.\n8. Finish before Nov 9 - the emails point at this page from that morning.\n9. Comment here when it is live so Taylor can link to it.\n\n### Details\n- **Owner:** J\n- **Phase:** Phase 1 - Hype\n- **Type:** Content\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "type:content"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-07",
+      "status": "Todo"
+    },
+    {
+      "title": "Build and schedule SMS for Phase 2 (Nov 9 VIP, Nov 10 public)",
+      "body": "**Work on it by:** Saturday 7 November 2026\n\n### Why it matters\nFirst texts of the quarter. Remaining SMS can be built phase by phase.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 1 - Hype\n- **Type:** Build\n- **Original checklist deadline:** Oct 28 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 1 - Hype",
+      "due": "2026-11-07",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Bundles hero + 20% banner",
+      "body": "**Work on it by:** Monday 9 November 2026\n\n### Why it matters\nVIP email goes out the same morning.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes, find TIMBERLINE at the top and click Customize.\n2. Check the dropdown at the top says Home page. If it does not, click it and choose Home page.\n3. In the list of sections on the left, find 'HERO - Phase 2 Bundles (Nov 9)'. Hidden sections look greyed out with a crossed-out eye. Click that eye once - the section goes solid and appears in the preview.\n4. Find the hero for Phase 1 Hype and click its eye once so it greys out.\n5. Do the same pair of clicks on the announcement bar blocks: show today's line, hide the last one.\n6. Click Save.\n7. Open mytruwood.com on your phone, pull down to refresh, and look at the top of the page. Both the hero and the banner should be the new ones.\n8. VIP email goes out the same morning, so do this first thing.\n9. If it looks wrong, do not try to fix it here. Go to Online Store > Themes, find 'TIMBERLINE - Last good' and click Publish. That puts the site back in about thirty seconds and it can be sorted out afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 2 - Bundles\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-09",
+      "status": "Todo"
+    },
+    {
+      "title": "Design email content and creatives for VIP Early Access Product Drop",
+      "body": "**Work on it by:** Tuesday 10 November 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** GBE\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 10 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-10",
+      "status": "Todo"
+    },
+    {
+      "title": "Retouch & format product photography for new watch and sunglasses drop",
+      "body": "**Work on it by:** Tuesday 10 November 2026\n\n### Why it matters\nHigh-res PDP images & collection hero visuals\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 10 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-10",
+      "status": "Todo"
+    },
+    {
+      "title": "Build the 'Already Purchased (BFCM)' and 'Not Purchased Yet (BFCM)' segments",
+      "body": "**Work on it by:** Tuesday 10 November 2026\n\n### Why it matters\nFirst segmented send is Nov 11. Does not need to exist before Phase 2 opens.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Oct 28 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-10",
+      "status": "Todo"
+    },
+    {
+      "title": "Draft Gorgias macros for BOGO tiers, engraving unlock, cutoffs and gift cards",
+      "body": "**Work on it by:** Tuesday 10 November 2026\n\n### Why it matters\nMoved from Nov 20. The same mechanics go live today at low volume - mistakes are cheap to catch now.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 2 - Bundles\n- **Type:** Support\n- **Original checklist deadline:** Nov 20 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:support"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-10",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule VIP Early Access Email & Public Launch Broadcast",
+      "body": "**Work on it by:** Thursday 12 November 2026\n\n### Why it matters\nKlaviyo VIP & Public Drop campaign sends\n\n### Details\n- **Owner:** GBE\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 12 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-12",
+      "status": "Todo"
+    },
+    {
+      "title": "Create three landing page shells: Bundles, Drop, BFCM",
+      "body": "**Work on it by:** Thursday 12 November 2026\n\n### Why it matters\nShells only - the structure and layout. J fills in the words and pictures.\n\n### How to do it\n\n1. Use the existing gift landing page as the template - duplicate it three times rather than building from scratch.\n2. Name the pages so the URLs read well: /pages/gift-bundles, /pages/new-drop, /pages/bfcm.\n3. Build the structure only: hero, product rows, trust strip, footer CTA. Leave the words and pictures as placeholders.\n4. Set each page to hidden or unpublished until its phase starts.\n5. Comment here with the three preview links so J can start adding content.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 2 - Bundles\n- **Type:** Website\n- **Original checklist deadline:** Sep 30 (landing pages) (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-12",
+      "status": "Todo"
+    },
+    {
+      "title": "Build Segmented Email for Previous BFCM Buyers: Unlock Free Engraving on 2nd Order",
+      "body": "**Work on it by:** Thursday 12 November 2026\n\n### Why it matters\nKlaviyo targeted email to Phase 2 buyers framing drop as gift\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 12 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-12",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Dynamic Product Ads (DPA) & Carousel Ad graphics featuring new watch and sunglasses items",
+      "body": "**Work on it by:** Thursday 12 November 2026\n\n### Why it matters\nAd graphics & carousel assets formatted for Meta & Google\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 12 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-12",
+      "status": "Todo"
+    },
+    {
+      "title": "Build & launch Dynamic Product Ads (DPA) & Catalog Campaigns featuring new product drop",
+      "body": "**Work on it by:** Thursday 12 November 2026\n\n### Why it matters\nActive Meta DPA & Google Shopping catalog campaigns\n\n### Details\n- **Owner:** Taylor/J\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 12 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-12",
+      "status": "Todo"
+    },
+    {
+      "title": "DECISIONS 2, 3, 4: Christmas Sale end date, the Dec 21-24 window, and the real shipping cutoffs",
+      "body": "**Work on it by:** Friday 13 November 2026\n\n### Why it matters\nDecember creative is designed Nov 15 and every send still has a [date] placeholder in it.\n\n### How to do it\n\n1. Three decisions in one, all needed before December creative is designed on Nov 15.\n2. When does the Christmas Sale end? The overview sheet and deck say Dec 22; the strategy notes and the December calendar say Dec 20. The calendar runs 'ends tonight' on Dec 20 and pivots to gift cards on Dec 21, which only works if BOGO has actually stopped.\n3. Is Dec 21-24 gift cards or BOGO? Deck slide 8 says both on the same slide. Running BOGO through that window destroys the full-margin gift card play it exists for.\n4. What are the real shipping cutoffs? The deck promises US Standard Dec 14 and Express Dec 21; ShipMonk's own dates are Standard Dec 17 and 2-day Dec 21. Promoting earlier is sensible, but the dates have to be fixed.\n5. Every 'Order by [date]' send in December still has a literal placeholder in it. Those cannot be filled until this is settled.\n6. Comment all three decisions here.\n\n### Details\n- **Owner:** Taylor / J\n- **Phase:** Phase 2 - Bundles\n- **Type:** Decision\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "owner:taylor",
+        "type:decision"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-13",
+      "status": "Todo"
+    },
+    {
+      "title": "Design email content and creatives for Christmas Sale & Shipping Cutoffs campaign",
+      "body": "**Work on it by:** Sunday 15 November 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** GBE\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 15 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-15",
+      "status": "Todo"
+    },
+    {
+      "title": "Write and add the content for the Product Drop landing page",
+      "body": "**Work on it by:** Sunday 15 November 2026\n\n### Why it matters\nPhase 3 launches Nov 17 and the VIP link goes out the night of the 16th.\n\n### How to do it\n\n1. Nolan has built the page shell and will comment here with the preview link. You are filling it in, not building it.\n2. Open the page in the Shopify customizer and work top to bottom.\n3. Headline: lead with what the customer gets, not the occasion. The offer is the new collection itself, not a discount.\n4. Subheadline: one sentence on who it is for. Gift pages convert on the recipient, not the product.\n5. Choose the products that appear and the order they appear in. Put the strongest first - most people never scroll to the third row.\n6. Four watches and three sunglasses. Each needs its own short piece of copy - what the wood is, what makes it different. This is the only page all quarter where the product is the news.\n7. Check every button goes somewhere real, and read the whole page on a phone before you call it done.\n8. Finish before Nov 17 - the emails point at this page from that morning.\n9. Comment here when it is live so Taylor can link to it.\n\n### Details\n- **Owner:** J\n- **Phase:** Phase 2 - Bundles\n- **Type:** Content\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "type:content"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-15",
+      "status": "Todo"
+    },
+    {
+      "title": "Build and test the shipping countdown ticker",
+      "body": "**Work on it by:** Sunday 15 November 2026\n\n### Why it matters\nNeeds confirmed cutoff dates from decision 4 before it can be built.\n\n### How to do it\n\n1. Do not start until the cutoff dates are confirmed - this is blocked on Decision 4.\n2. Build it as a section with a date setting so the dates can be changed without code.\n3. It counts down to the promoted cutoff, not ShipMonk's internal one.\n4. It must hide itself automatically after the cutoff passes. A countdown showing '0 days left' on Dec 22 is worse than no countdown.\n5. Test it by setting the date to tomorrow, then to yesterday, and confirming both behave.\n6. Build in Staging, review, publish. Leave it switched off until Dec 10.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 2 - Bundles\n- **Type:** Website\n- **Original checklist deadline:** Nov 15 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-15",
+      "status": "Todo"
+    },
+    {
+      "title": "Create automatic $25 January Gift Card distribution system & post-purchase email flow",
+      "body": "**Work on it by:** Sunday 15 November 2026\n\n### Why it matters\nKlaviyo automated gift card flow sending unique codes\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 15 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-15",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Christmas Retargeting Ad Creatives featuring dynamic shipping cutoff countdown badges",
+      "body": "**Work on it by:** Sunday 15 November 2026\n\n### Why it matters\nAd visuals & countdown graphic assets\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 2 - Bundles\n- **Type:** Build\n- **Original checklist deadline:** Nov 15 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-15",
+      "status": "Todo"
+    },
+    {
+      "title": "Build the drop collection pages for 4 watches and 3 sunglasses",
+      "body": "**Work on it by:** Monday 16 November 2026\n\n### Why it matters\nPhase 3 goes live the next morning. VIP early access is the night of Nov 16.\n\n### How to do it\n\n1. Four watches and three sunglasses, live at 00:01 on Nov 17 - but the VIP link goes out the evening of Nov 16, so it must be ready the day before.\n2. Create the collection and confirm all seven products are in it and set to Active.\n3. Check the wood-grain swatches show in quick view as well as on the product page. That has broken before.\n4. Confirm every product has images, a price, and the specs filled in.\n5. Confirm the collection is included in the BOGO-eligible set, because Phase 4 explicitly covers the drop pieces.\n6. Send Taylor the collection link so the VIP email can point at it.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 2 - Bundles\n- **Type:** Website\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Phase 2 - Bundles",
+      "due": "2026-11-16",
+      "status": "Todo"
+    },
+    {
+      "title": "Set low-stock threshold alerts on the seven new drop SKUs",
+      "body": "**Work on it by:** Tuesday 17 November 2026\n\n### Why it matters\nThe Nov 21 send claims a piece is low in stock. Right now nothing is watching.\n\n### Details\n- **Owner:** Charlie\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:charlie",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-17",
+      "status": "Todo"
+    },
+    {
+      "title": "Design email content and creatives for BFCM BOGO 75% campaign sequence",
+      "body": "**Work on it by:** Tuesday 17 November 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** GBE\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Original checklist deadline:** Nov 17 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-17",
+      "status": "Todo"
+    },
+    {
+      "title": "Design BOGO 75% Off Social Ad Creatives (Noir/Gold Theme) for Meta & Google",
+      "body": "**Work on it by:** Tuesday 17 November 2026\n\n### Why it matters\nBlack Friday / Cyber Monday promo ad visuals & copy assets\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Original checklist deadline:** Nov 17 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-17",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Drop hero + 'New: 4 watches + 3 sunglasses' banner",
+      "body": "**Work on it by:** Tuesday 17 November 2026\n\n### Why it matters\nToggle the night of Nov 16 for VIP access.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-17",
+      "status": "Todo"
+    },
+    {
+      "title": "DECISION 5: VIP early access as a discount code, then automatic from Nov 27",
+      "body": "**Work on it by:** Tuesday 17 November 2026\n\n### Why it matters\nAn automatic discount active Nov 24 makes the sale public on Nov 24.\n\n### How to do it\n\n1. The question: how does VIP early access work on Nov 24 when the BOGO discount is automatic?\n2. The problem: an automatic discount applies to everyone the moment it is active. Switch it on for VIPs on Nov 24 and the sale is public on Nov 24 - and the Black Friday email on Nov 27 announces a sale anyone could already see for three days.\n3. The recommendation: run Nov 24-26 as a VIP discount code, then switch to the automatic discount on Nov 27.\n4. The alternative is gating the automatic discount to a customer segment. Shopify may support that on a Buy X Get Y discount - test it rather than assume, before Nov 20.\n5. Whichever way it goes, Taylor needs it before building the Nov 19 email sequence.\n\n### Details\n- **Owner:** Taylor / Nolan\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Decision\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "owner:taylor",
+        "type:decision"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-17",
+      "status": "Todo"
+    },
+    {
+      "title": "Decide how to present \"final sale\" to customers, decide on holiday return deadline",
+      "body": "**Work on it by:** Tuesday 17 November 2026\n\n### Why it matters\nUpdate return/exchange policy\n\n### Details\n- **Owner:** Taylor/J\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Original checklist deadline:** Nov 17 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-17",
+      "status": "Todo"
+    },
+    {
+      "title": "Support the conflicting-discount teardown and test BOGO against the 15% welcome code",
+      "body": "**Work on it by:** Wednesday 18 November 2026\n\n### Why it matters\nMoved two days earlier than the checklist so Nov 20 is buffer, not the deadline.\n\n### How to do it\n\n1. Taylor turns off the old discounts; your job is proving nothing stacks.\n2. Place a test order using the VIP BOGO code with two items and confirm 75% comes off the lower-priced one.\n3. Try the VIP code together with the old 15% welcome code. They must not stack.\n4. Try the VIP code on a gift card. It should not apply.\n5. Check the automatic BOGO discount exists but is still switched off.\n6. Write what you tested in a comment here, so on Nov 27 nobody is guessing what was checked.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Website\n- **Original checklist deadline:** Nov 20 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-18",
+      "status": "Todo"
+    },
+    {
+      "title": "Build & Schedule BFCM Email Sequence (Phase 4.1 VIP, Phase 4.2 Public BFCM)",
+      "body": "**Work on it by:** Thursday 19 November 2026\n\n### Why it matters\nScheduled Klaviyo email & SMS broadcasts\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Original checklist deadline:** Nov 19 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-19",
+      "status": "Todo"
+    },
+    {
+      "title": "Set up Klaviyo Tagging Logic to identify repeat BFCM Purchasers for Green Monday VIP Access",
+      "body": "**Work on it by:** Thursday 19 November 2026\n\n### Why it matters\nAutomated segment rules tagging repeat BFCM buyers\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Original checklist deadline:** Nov 19 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-19",
+      "status": "Todo"
+    },
+    {
+      "title": "Swap the placeholder artwork out of all ten hero sections for the real images",
+      "body": "**Work on it by:** Thursday 19 November 2026\n\n### Why it matters\nNolan builds them with flat green placeholders. Replacing those is a picture swap in the customizer, not theme work, and it has to be finished before BFCM.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-19",
+      "status": "Todo"
+    },
+    {
+      "title": "Build & schedule heavy budget Meta/Google Ad Campaigns for BOGO 75% Off launch",
+      "body": "**Work on it by:** Thursday 19 November 2026\n\n### Why it matters\nActive prospecting & retargeting ad campaigns\n\n### Details\n- **Owner:** Taylor/J\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Original checklist deadline:** Nov 19 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-19",
+      "status": "Todo"
+    },
+    {
+      "title": "Create two more landing page shells: Christmas Sale and Gift Yourself",
+      "body": "**Work on it by:** Friday 20 November 2026\n\n### Why it matters\nSame template as the November three. J fills the content before each launch.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Website\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-20",
+      "status": "Todo"
+    },
+    {
+      "title": "Test all promotional offers & discount codes on site (BOGO 75%, Free Engraving logic)",
+      "body": "**Work on it by:** Friday 20 November 2026\n\n### Why it matters\nCompleted QA checklist confirming cart calculation accuracy\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 3 - Product Drop\n- **Type:** QA & Testing\n- **Original checklist deadline:** Nov 20 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:qa"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-20",
+      "status": "Todo"
+    },
+    {
+      "title": "Write and add the content for the BFCM landing page",
+      "body": "**Work on it by:** Saturday 21 November 2026\n\n### Why it matters\nThe highest-traffic page of the year. VIP access starts Nov 24.\n\n### How to do it\n\n1. Nolan has built the page shell and will comment here with the preview link. You are filling it in, not building it.\n2. Open the page in the Shopify customizer and work top to bottom.\n3. Headline: lead with what the customer gets, not the occasion. The offer is BOGO 75% off sitewide, including the new drop.\n4. Subheadline: one sentence on who it is for. Gift pages convert on the recipient, not the product.\n5. Choose the products that appear and the order they appear in. Put the strongest first - most people never scroll to the third row.\n6. Say plainly how BOGO works - 75% off the lower-priced item. Most support tickets during a BOGO are people who misread the offer, and one clear sentence here prevents them.\n7. Check every button goes somewhere real, and read the whole page on a phone before you call it done.\n8. Finish before Nov 24 - the emails point at this page from that morning.\n9. Comment here when it is live so Taylor can link to it.\n\n### Details\n- **Owner:** J\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Content\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "type:content"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-21",
+      "status": "Todo"
+    },
+    {
+      "title": "Read every one of the ten phase states end to end for typos and dead links",
+      "body": "**Work on it by:** Sunday 22 November 2026\n\n### Why it matters\nNolan's pre-flight covers whether things work. This covers whether they read right - spelling, prices, dates, and every button going where it says.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Build\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-22",
+      "status": "Todo"
+    },
+    {
+      "title": "Final pre-flight QA on the live theme, then park a dated 'Last good' copy",
+      "body": "**Work on it by:** Monday 23 November 2026\n\n### Why it matters\nThe rollback target for BFCM week.\n\n### How to do it\n\n1. Work through this on the live theme, not Staging.\n2. All ten hero sections open correctly and carry real artwork, not placeholders.\n3. Phase 4 hero and banner preview correctly on mobile and on desktop.\n4. The sale collection grid is populated and sorted sensibly.\n5. The drop products are live, in stock, and appear in the BOGO-eligible collection.\n6. Quick view shows wood-grain swatches on the new drop SKUs.\n7. Checkout works end to end with a real card.\n8. Then duplicate Live and name it 'TIMBERLINE - Last good (Nov 23)'. This is the rollback target for BFCM week.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 3 - Product Drop\n- **Type:** Website\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Phase 3 - Product Drop",
+      "due": "2026-11-23",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - BFCM hero + BOGO banner + sale collection grid",
+      "body": "**Work on it by:** Tuesday 24 November 2026\n\n### Why it matters\nVIP discount CODE only - do NOT switch on the automatic discount.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes, find TIMBERLINE at the top and click Customize.\n2. Check the dropdown at the top says Home page. If it does not, click it and choose Home page.\n3. In the list of sections on the left, find 'HERO - Phase 4 BOGO (Nov 24)'. Hidden sections look greyed out with a crossed-out eye. Click that eye once - the section goes solid and appears in the preview.\n4. Find the hero for Phase 3 Drop and click its eye once so it greys out.\n5. Do the same pair of clicks on the announcement bar blocks: show today's line, hide the last one.\n6. Click Save.\n7. Open mytruwood.com on your phone, pull down to refresh, and look at the top of the page. Both the hero and the banner should be the new ones.\n8. Also show the sale collection grid. Do NOT switch on the automatic discount - VIP runs on a code until Nov 27 and Nolan makes that change.\n9. If it looks wrong, do not try to fix it here. Go to Online Store > Themes, find 'TIMBERLINE - Last good' and click Publish. That puts the site back in about thirty seconds and it can be sorted out afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-24",
+      "status": "Todo"
+    },
+    {
+      "title": "Design email content and creatives for Giving Tuesday campaign",
+      "body": "**Work on it by:** Wednesday 25 November 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** GBE\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Build\n- **Original checklist deadline:** Nov 25 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-25",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Giving Tuesday Banner & Social Graphics (5 Trees Planted Per Order)",
+      "body": "**Work on it by:** Wednesday 25 November 2026\n\n### Why it matters\nEco-focused green/gold email headers & social cards\n\n### How to do it\n\n1. Create a convention and write it down before the first Nov 2 send.\n2. Something like: utm_source=klaviyo, utm_medium=email or sms, utm_campaign=phase2-bundles, utm_content=vip-launch.\n3. The campaign name should match the phase names used everywhere else, so the data lines up with the plan without translation.\n4. Use the same convention on paid ads and on the Linktree links.\n5. Put it in a comment here so everyone tags the same way.\n6. Without this, nothing about Q4 can be measured afterwards and next year's plan is guesswork.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Build\n- **Original checklist deadline:** Nov 25 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-25",
+      "status": "Todo"
+    },
+    {
+      "title": "Build the December segments (Dec Sale non-purchasers, non-openers, Dec purchasers)",
+      "body": "**Work on it by:** Wednesday 25 November 2026\n\n### Why it matters\nFirst December segmented send is Dec 4.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Build\n- **Original checklist deadline:** Oct 28 (resequenced \u2014 see the plan for why)\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-25",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Switch the VIP code off and the automatic BOGO discount on",
+      "body": "**Work on it by:** Friday 27 November 2026\n\n### Why it matters\nBlack Friday. Highest-risk change of the quarter.\n\n### How to do it\n\n1. This is the highest-risk change of the quarter. Do it in the morning, not at midnight.\n2. Turn the VIP BOGO discount code OFF first.\n3. Turn the automatic BOGO 75% discount ON.\n4. Place one real test order immediately and confirm the discount applies without a code.\n5. Check that the old VIP code no longer works.\n6. Tell Taylor it is live before the Black Friday email goes out - not after.\n7. Watch the first fifteen minutes of real orders and confirm the discount is landing right.\n8. If anything looks wrong, publish 'TIMBERLINE - Last good' and turn the automatic discount off. Diagnose afterwards.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:site-change"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule Christmas Sale Email Series with BOGO 75% + Shipping Countdown Angles",
+      "body": "**Work on it by:** Friday 27 November 2026\n\n### Why it matters\nScheduled Klaviyo campaign emails\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Build\n- **Original checklist deadline:** Nov 27 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule Giving Tuesday Broadcast Email & SMS (Your Gift Plants 5 Trees)",
+      "body": "**Work on it by:** Friday 27 November 2026\n\n### Why it matters\nScheduled Klaviyo Email & SMS broadcast\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Build\n- **Original checklist deadline:** Nov 27 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Build & launch Retargeting Ad Campaigns featuring Shipping Cutoff Countdown dynamic copy",
+      "body": "**Work on it by:** Friday 27 November 2026\n\n### Why it matters\nActive Meta/Google ads with dynamic countdowns\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Build\n- **Original checklist deadline:** Nov 27 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Update Site Announcement Bar & Homepage Hero for 24h Giving Tuesday Focus",
+      "body": "**Work on it by:** Friday 27 November 2026\n\n### Why it matters\n5 Trees Planted per purchase badge & counter banner\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Build\n- **Original checklist deadline:** Nov 27 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-27",
+      "status": "Todo"
+    },
+    {
+      "title": "Write and add the content for the Christmas Sale landing page",
+      "body": "**Work on it by:** Sunday 29 November 2026\n\n### Why it matters\nOpens Dec 2 and runs nineteen days - the longest-lived page of the quarter.\n\n### How to do it\n\n1. Nolan has built the page shell and will comment here with the preview link. You are filling it in, not building it.\n2. Open the page in the Shopify customizer and work top to bottom.\n3. Headline: lead with what the customer gets, not the occasion. The offer is BOGO 75% plus a $25 January gift card with every order.\n4. Subheadline: one sentence on who it is for. Gift pages convert on the recipient, not the product.\n5. Choose the products that appear and the order they appear in. Put the strongest first - most people never scroll to the third row.\n6. This page lives nineteen days, so the angle shifts under it: gifting first, then shipping deadlines, then last call. Write the body so the headline can change without rewriting everything underneath.\n7. Check every button goes somewhere real, and read the whole page on a phone before you call it done.\n8. Finish before Dec 2 - the emails point at this page from that morning.\n9. Comment here when it is live so Taylor can link to it.\n\n### Details\n- **Owner:** J\n- **Phase:** Phase 4 - BOGO 75%\n- **Type:** Content\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "type:content"
+      ],
+      "milestone": "Phase 4 - BOGO 75%",
+      "due": "2026-11-29",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Trees hero + '5 trees per order' banner",
+      "body": "**Work on it by:** Tuesday 1 December 2026\n\n### Why it matters\n24 hours only. Revert tomorrow.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes, find TIMBERLINE at the top and click Customize.\n2. Check the dropdown at the top says Home page. If it does not, click it and choose Home page.\n3. In the list of sections on the left, find 'HERO - Giving Tuesday (Dec 1)'. Hidden sections look greyed out with a crossed-out eye. Click that eye once - the section goes solid and appears in the preview.\n4. Find the hero for Phase 4 BOGO and click its eye once so it greys out.\n5. Do the same pair of clicks on the announcement bar blocks: show today's line, hide the last one.\n6. Click Save.\n7. Open mytruwood.com on your phone, pull down to refresh, and look at the top of the page. Both the hero and the banner should be the new ones.\n8. This one lasts 24 hours. Put a reminder in your phone to change it back tomorrow morning.\n9. If it looks wrong, do not try to fix it here. Go to Online Store > Themes, find 'TIMBERLINE - Last good' and click Publish. That puts the site back in about thirty seconds and it can be sorted out afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Giving Tuesday\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Giving Tuesday",
+      "due": "2026-12-01",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Christmas hero + 'BOGO 75% + $25 January card' banner",
+      "body": "**Work on it by:** Wednesday 2 December 2026\n\n### Why it matters\nRuns to Dec 20.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes, find TIMBERLINE at the top and click Customize.\n2. Check the dropdown at the top says Home page. If it does not, click it and choose Home page.\n3. In the list of sections on the left, find 'HERO - Christmas Sale (Dec 2)'. Hidden sections look greyed out with a crossed-out eye. Click that eye once - the section goes solid and appears in the preview.\n4. Find the hero for Giving Tuesday and click its eye once so it greys out.\n5. Do the same pair of clicks on the announcement bar blocks: show today's line, hide the last one.\n6. Click Save.\n7. Open mytruwood.com on your phone, pull down to refresh, and look at the top of the page. Both the hero and the banner should be the new ones.\n8. This one stays up until Dec 20, the longest run of the quarter.\n9. If it looks wrong, do not try to fix it here. Go to Online Store > Themes, find 'TIMBERLINE - Last good' and click Publish. That puts the site back in about thirty seconds and it can be sorted out afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Christmas Sale\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-02",
+      "status": "Todo"
+    },
+    {
+      "title": "Design email content and creatives for Green Monday Free Shipping promotion",
+      "body": "**Work on it by:** Saturday 5 December 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** GBE\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 5 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-05",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule Early Access Email to repeat BFCM Purchasers & Top VIPs",
+      "body": "**Work on it by:** Monday 7 December 2026\n\n### Why it matters\nScheduled Klaviyo VIP broadcast email\n\n### Details\n- **Owner:** Charlie\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 7 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:charlie",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-07",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Green Monday Hero Banners & Social Cards (Free Express Shipping Day)",
+      "body": "**Work on it by:** Monday 7 December 2026\n\n### Why it matters\nHigh-urgency graphics combining Free Shipping + Cutoff day\n\n### Details\n- **Owner:** GBE\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 7 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:gbe",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-07",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule Public Green Monday Email & SMS Blast (Final Day for Standard Shipping + Free Shipping)",
+      "body": "**Work on it by:** Monday 7 December 2026\n\n### Why it matters\nScheduled Broadcast email & SMS\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 7 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-07",
+      "status": "Todo"
+    },
+    {
+      "title": "Set up Automatic Free Shipping Logic on Shopify for US & Intl Express for Dec 14",
+      "body": "**Work on it by:** Monday 7 December 2026\n\n### Why it matters\nTested Shopify shipping rate override active Dec 14\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 7 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-07",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Switch the shipping countdown ticker on",
+      "body": "**Work on it by:** Thursday 10 December 2026\n\n### Why it matters\nNeeds the confirmed cutoff dates.\n\n### How to do it\n\n1. Unhide the shipping countdown section on the live theme.\n2. Confirm it shows the right number of days against the promoted cutoff.\n3. Check it on a phone - it sits near the announcement bar and the two together can crowd the top of the screen.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Christmas Sale\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:site-change"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-10",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Green Monday hero + free Express shipping banner",
+      "body": "**Work on it by:** Monday 14 December 2026\n\n### Why it matters\nNolan activates the shipping rate override the same morning.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes, find TIMBERLINE at the top and click Customize.\n2. Check the dropdown at the top says Home page. If it does not, click it and choose Home page.\n3. In the list of sections on the left, find 'HERO - Green Monday (Dec 14)'. Hidden sections look greyed out with a crossed-out eye. Click that eye once - the section goes solid and appears in the preview.\n4. Find the hero for Christmas Sale and click its eye once so it greys out.\n5. Do the same pair of clicks on the announcement bar blocks: show today's line, hide the last one.\n6. Click Save.\n7. Open mytruwood.com on your phone, pull down to refresh, and look at the top of the page. Both the hero and the banner should be the new ones.\n8. Nolan switches on the free-shipping rate the same morning. Check with him before you announce it.\n9. If it looks wrong, do not try to fix it here. Go to Online Store > Themes, find 'TIMBERLINE - Last good' and click Publish. That puts the site back in about thirty seconds and it can be sorted out afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Green Monday\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Green Monday",
+      "due": "2026-12-14",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Last-Minute Digital Gift Card Web Banners (Instant Delivery)",
+      "body": "**Work on it by:** Wednesday 16 December 2026\n\n### Why it matters\nZero-shipping friction graphics highlighting instant gift cards\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 16 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-16",
+      "status": "Todo"
+    },
+    {
+      "title": "Design email content and creatives for Digital Gift Cards post-cutoff push",
+      "body": "**Work on it by:** Wednesday 16 December 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 16 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-16",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Gift Yourself Campaign Banners & Social Ad Cards (BOGO 75% Off)",
+      "body": "**Work on it by:** Wednesday 16 December 2026\n\n### Why it matters\nPost-holiday self-gifting creative suite\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 16 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-16",
+      "status": "Todo"
+    },
+    {
+      "title": "Design email content and creatives for Gift Yourself post-holiday campaign",
+      "body": "**Work on it by:** Wednesday 16 December 2026\n\n### Why it matters\nEmail design assets & visual content\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 16 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-16",
+      "status": "Todo"
+    },
+    {
+      "title": "Design Post-Holiday Self-Gifting Ad Creatives featuring BOGO 75% Off hook",
+      "body": "**Work on it by:** Wednesday 16 December 2026\n\n### Why it matters\nSocial ad visuals & story graphics for post-Christmas retargeting\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 16 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-16",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule Last-Minute Digital Gift Card Campaigns",
+      "body": "**Work on it by:** Friday 18 December 2026\n\n### Why it matters\nKlaviyo campaign emails targeting late shoppers\n\n### Details\n- **Owner:** Charlie\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 18 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:charlie",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-18",
+      "status": "Todo"
+    },
+    {
+      "title": "Schedule Gift Yourself Email Series & January Voucher Redemption Reminder",
+      "body": "**Work on it by:** Friday 18 December 2026\n\n### Why it matters\nScheduled Klaviyo post-holiday campaign emails\n\n### Details\n- **Owner:** Charlie\n- **Phase:** Christmas Sale\n- **Type:** Build\n- **Original checklist deadline:** Dec 18 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:charlie",
+        "type:build"
+      ],
+      "milestone": "Christmas Sale",
+      "due": "2026-12-18",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Gift card hero + 'delivers instantly' banner",
+      "body": "**Work on it by:** Monday 21 December 2026\n\n### Why it matters\nBOGO comes OFF. Confirm the discount is actually disabled.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes, find TIMBERLINE at the top and click Customize.\n2. Check the dropdown at the top says Home page. If it does not, click it and choose Home page.\n3. In the list of sections on the left, find 'HERO - Gift Cards (Dec 21)'. Hidden sections look greyed out with a crossed-out eye. Click that eye once - the section goes solid and appears in the preview.\n4. Find the hero for Green Monday and click its eye once so it greys out.\n5. Do the same pair of clicks on the announcement bar blocks: show today's line, hide the last one.\n6. Click Save.\n7. Open mytruwood.com on your phone, pull down to refresh, and look at the top of the page. Both the hero and the banner should be the new ones.\n8. BOGO comes OFF today. Confirm the discount is actually disabled rather than assuming - check a test cart.\n9. If it looks wrong, do not try to fix it here. Go to Online Store > Themes, find 'TIMBERLINE - Last good' and click Publish. That puts the site back in about thirty seconds and it can be sorted out afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Gift Card Window\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Gift Card Window",
+      "due": "2026-12-21",
+      "status": "Todo"
+    },
+    {
+      "title": "Write and add the content for the Gift Yourself landing page",
+      "body": "**Work on it by:** Tuesday 22 December 2026\n\n### Why it matters\nOpens Dec 26. Written before Christmas so nobody is working on Boxing Day.\n\n### How to do it\n\n1. Nolan has built the page shell and will comment here with the preview link. You are filling it in, not building it.\n2. Open the page in the Shopify customizer and work top to bottom.\n3. Headline: lead with what the customer gets, not the occasion. The offer is BOGO 75% off, framed as buying for yourself.\n4. Subheadline: one sentence on who it is for. Gift pages convert on the recipient, not the product.\n5. Choose the products that appear and the order they appear in. Put the strongest first - most people never scroll to the third row.\n6. This is the one page all quarter that is not about gifting someone else. The copy has to turn around completely - holiday money, something you have been putting off.\n7. Check every button goes somewhere real, and read the whole page on a phone before you call it done.\n8. Finish before Dec 26 - the emails point at this page from that morning.\n9. Comment here when it is live so Taylor can link to it.\n\n### Details\n- **Owner:** J\n- **Phase:** Gift Card Window\n- **Type:** Content\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:j",
+        "type:content"
+      ],
+      "milestone": "Gift Card Window",
+      "due": "2026-12-22",
+      "status": "Todo"
+    },
+    {
+      "title": "Build & launch Post-Holiday Meta Retargeting Ads targeting gift card holders & self-shoppers",
+      "body": "**Work on it by:** Tuesday 22 December 2026\n\n### Why it matters\nActive Meta ad sets running Dec 22 through Jan 4\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Gift Card Window\n- **Type:** Build\n- **Original checklist deadline:** Dec 22 (resequenced \u2014 see the plan for why)\n- **Source:** Master checklist\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Gift Card Window",
+      "due": "2026-12-22",
+      "status": "Todo"
+    },
+    {
+      "title": "PHASE DAY - Self-gifting hero + 'BOGO 75% is back' banner",
+      "body": "**Work on it by:** Saturday 26 December 2026\n\n### Why it matters\nBOGO back on. Runs to Jan 4.\n\n### How to do it\n\n1. In Shopify go to Online Store > Themes, find TIMBERLINE at the top and click Customize.\n2. Check the dropdown at the top says Home page. If it does not, click it and choose Home page.\n3. In the list of sections on the left, find 'HERO - Gift Yourself (Dec 26)'. Hidden sections look greyed out with a crossed-out eye. Click that eye once - the section goes solid and appears in the preview.\n4. Find the hero for Gift Cards and click its eye once so it greys out.\n5. Do the same pair of clicks on the announcement bar blocks: show today's line, hide the last one.\n6. Click Save.\n7. Open mytruwood.com on your phone, pull down to refresh, and look at the top of the page. Both the hero and the banner should be the new ones.\n8. This is a Saturday, the day after Christmas. Agreed in advance who is doing it - the sale does not start until someone does.\n9. If it looks wrong, do not try to fix it here. Go to Online Store > Themes, find 'TIMBERLINE - Last good' and click Publish. That puts the site back in about thirty seconds and it can be sorted out afterwards.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Gift Yourself\n- **Type:** Phase day\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:site-change"
+      ],
+      "milestone": "Gift Yourself",
+      "due": "2026-12-26",
+      "status": "Todo"
+    },
+    {
+      "title": "Build and schedule the January $25 gift-card redemption campaign (Jan 5-31)",
+      "body": "**Work on it by:** Monday 4 January 2027\n\n### Why it matters\nFlagged as missing in your own strategy notes. Every December order carries a card that expires Jan 31.\n\n### Details\n- **Owner:** Taylor\n- **Phase:** Gift Yourself\n- **Type:** Build\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:taylor",
+        "type:build"
+      ],
+      "milestone": "Gift Yourself",
+      "due": "2027-01-04",
+      "status": "Todo"
+    },
+    {
+      "title": "Turn the BOGO 75% discount OFF and revert the storefront to its standard state",
+      "body": "**Work on it by:** Tuesday 5 January 2027\n\n### Why it matters\nNeither document has a task that ends the sale. Without this it runs into January at full discount.\n\n### How to do it\n\n1. Turn the automatic BOGO 75% discount off.\n2. Place a test order and confirm full price is charged.\n3. Hide the Gift Yourself hero and show the standard one.\n4. Clear the announcement bar back to its normal message.\n5. Check no December gift-card wording is still live anywhere on the site.\n\n### Details\n- **Owner:** Nolan\n- **Phase:** Gift Yourself\n- **Type:** Website\n- **Source:** Added\n\n---\n_Imported from the Master Q4 / BFCM Operational Checklist and the Pre-BFCM Strategy deck._",
+      "labels": [
+        "owner:nolan",
+        "type:website"
+      ],
+      "milestone": "Gift Yourself",
+      "due": "2027-01-05",
+      "status": "Todo"
+    }
+  ]
+}
