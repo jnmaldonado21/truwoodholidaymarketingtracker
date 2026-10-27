@@ -1,0 +1,99 @@
+name: Create the Q4 issues
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many issues to create (0 = all of them)"
+        required: true
+        default: "0"
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create labels, milestones and issues
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          LIMIT: ${{ inputs.limit }}
+        run: |
+          set -euo pipefail
+          DATA=truwood-q4-github.json
+          test -f "$DATA" || { echo "::error::$DATA is not in the repo root."; exit 1; }
+
+          while read -r l; do
+            name=$(jq -r '.name' <<<"$l")
+            enc=$(jq -rn --arg s "$name" '$s|@uri')
+            if gh api "repos/$REPO/labels/$enc" >/dev/null 2>&1; then
+              echo "  = $name"
+            else
+              gh api -X POST "repos/$REPO/labels" \
+                -f name="$name" \
+                -f color="$(jq -r '.color' <<<"$l")" \
+                -f description="$(jq -r '.description' <<<"$l")" >/dev/null
+              echo "  + $name"
+            fi
+          done < <(jq -c '.labels[]' "$DATA")
+
+          while read -r m; do
+            title=$(jq -r '.title' <<<"$m")
+            have=$(gh api --paginate "repos/$REPO/milestones?state=all" \
+                   --jq ".[] | select(.title==\"$title\") | .number" | head -1)
+            if [ -n "$have" ]; then
+              echo "  = $title (#$have)"
+            else
+              num=$(gh api -X POST "repos/$REPO/milestones" \
+                    -f title="$title" \
+                    -f due_on="$(jq -r '.due_on' <<<"$m")" \
+                    -f description="$(jq -r '.description' <<<"$m")" --jq '.number')
+              echo "  + $title (#$num)"
+            fi
+          done < <(jq -c '.milestones[]' "$DATA")
+
+          ms=$(gh api --paginate "repos/$REPO/milestones?state=all" \
+               | jq -s 'add // [] | map({(.title): .number}) | add // {}')
+
+          existing=$(mktemp)
+          gh api --paginate "repos/$REPO/issues?state=all&per_page=100" \
+            --jq '.[] | select(has("pull_request")|not) | .title' > "$existing" || true
+
+          total=$(jq '.issues | length' "$DATA")
+          made=0; skipped=0; i=0
+          while read -r iss; do
+            i=$((i+1))
+            title=$(jq -r '.title' <<<"$iss")
+            if grep -Fxq "$title" "$existing"; then
+              skipped=$((skipped+1)); continue
+            fi
+            if [ "$LIMIT" != "0" ] && [ "$made" -ge "$LIMIT" ]; then
+              break
+            fi
+            msname=$(jq -r '.milestone' <<<"$iss")
+            msnum=$(jq -r --arg t "$msname" '.[$t] // empty' <<<"$ms")
+
+            args=(-X POST "repos/$REPO/issues" -f title="$title" -f body="$(jq -r '.body' <<<"$iss")")
+            [ -n "$msnum" ] && args+=(-F milestone="$msnum")
+            while read -r lab; do args+=(-f "labels[]=$lab"); done < <(jq -r '.labels[]' <<<"$iss")
+
+            gh api "${args[@]}" >/dev/null
+            made=$((made+1))
+            printf '  [%2d/%s] + %s\n' "$i" "$total" "${title:0:60}"
+            sleep 1
+          done < <(jq -c '.issues[]' "$DATA")
+
+          {
+            echo "### Issues"
+            echo ""
+            echo "- Created: **$made**"
+            echo "- Already there, skipped: **$skipped**"
+            echo ""
+            echo "[Open the issues](https://github.com/$REPO/issues)"
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "Created $made, skipped $skipped."
