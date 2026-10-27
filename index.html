@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TruWood Q4 Runway</title>
+<meta name="description" content="Timeline and board for TruWood's Q4 2026 campaign, Oct 27 to Jan 5.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: sticky filter rail over two swappable panes - a day-scaled timeline with
+   owner swimlanes, and a status board. Brand tokens carried over from TIMBERLINE. */
+:root {
+  --bg:#F7F4ED; --surface:#FFFFFF; --surface-2:#FBF8F2; --fg:#241F19; --muted:#6E6558;
+  --line:#DED6C7; --line-soft:#EDE6D9; --accent:#2F4A3A; --accent-ink:#FFFFFF;
+  --accent-soft:#E3EBE4; --good:#3F7A52; --warn:#9A6A14; --crit:#A33A2A;
+  --ph-s:30%; --ph-l:87%; --chip-ink:#241F19;
+  --shadow:0 1px 2px rgba(36,31,25,.06),0 4px 14px rgba(36,31,25,.05);
+  --font-display:"Bricolage Grotesque","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-body:"Work Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:#141714; --surface:#1C211D; --surface-2:#232823; --fg:#ECE6DA; --muted:#9B9284;
+    --line:#333A34; --line-soft:#272D28; --accent:#8FB79A; --accent-ink:#11150F;
+    --accent-soft:#24302A; --good:#6FA880; --warn:#C79A42; --crit:#D2705C;
+    --ph-s:24%; --ph-l:26%; --chip-ink:#ECE6DA;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3);
+    color-scheme: dark;
+  }
+}
+* { box-sizing:border-box; }
+html, body { margin:0; }
+body {
+  background:var(--bg); color:var(--fg); font-family:var(--font-body);
+  font-size:14px; line-height:1.45;
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+  padding-block:0 48px;
+}
+.wrap { max-width:1240px; margin:0 auto; }
+header.top { padding-block:22px 14px; display:flex; flex-wrap:wrap; align-items:flex-end; gap:10px 18px; }
+h1 { font-family:var(--font-display); font-size:clamp(22px,4vw,30px); font-weight:800;
+     letter-spacing:-.015em; margin:0; text-wrap:balance; }
+.lede { color:var(--muted); font-size:13px; margin:2px 0 0; max-width:62ch; }
+.lede a { color:var(--accent); }
+.counts { margin-left:auto; display:flex; gap:14px; font-family:var(--font-mono); font-size:11px;
+          text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+.counts b { display:block; font-family:var(--font-display); font-size:19px; font-weight:700;
+            color:var(--fg); letter-spacing:0; font-variant-numeric:tabular-nums; }
+.rail { position:sticky; top:0; z-index:9; background:var(--bg); border-bottom:1px solid var(--line);
+        padding-block:10px; display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; }
+.seg { display:inline-flex; border:1px solid var(--line); border-radius:9px; overflow:hidden; background:var(--surface); }
+.seg button { font:inherit; font-size:13px; font-weight:600; padding:6px 14px; border:0;
+              background:transparent; color:var(--muted); cursor:pointer; }
+.seg button[aria-pressed="true"] { background:var(--accent); color:var(--accent-ink); }
+.seg button:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
+label.fl { display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--muted); }
+select, .mini { font:inherit; font-size:13px; padding:5px 8px; border-radius:8px;
+  border:1px solid var(--line); background:var(--surface); color:var(--fg); max-width:170px; }
+button.ghost { font:inherit; font-size:12px; font-weight:600; padding:5px 11px; border-radius:8px;
+  border:1px solid var(--line); background:var(--surface); color:var(--muted); cursor:pointer; }
+button.ghost[aria-pressed="true"] { background:var(--accent-soft); color:var(--fg); border-color:var(--accent); }
+.sync { margin-left:auto; font-size:11px; color:var(--muted); font-family:var(--font-mono); }
+.sync a { color:inherit; }
+.scroller { overflow-x:auto; overflow-y:hidden; margin-top:16px; border:1px solid var(--line);
+            border-radius:12px; background:var(--surface); }
+.tl { position:relative; }
+.tl-head { position:relative; height:40px; border-bottom:1px solid var(--line); }
+.wk { position:absolute; top:0; height:100%; border-left:1px solid var(--line-soft); font-size:10px;
+      color:var(--muted); padding:6px 0 0 6px; font-family:var(--font-mono);
+      text-transform:uppercase; letter-spacing:.05em; white-space:nowrap; }
+.bands { position:relative; border-bottom:1px solid var(--line); padding:7px 0; }
+.band { position:absolute; height:20px; border-radius:5px; font-size:10.5px; font-weight:600;
+        line-height:20px; padding:0 7px; overflow:hidden; white-space:nowrap;
+        color:var(--chip-ink); background:hsl(var(--ph-h) var(--ph-s) var(--ph-l)); }
+.lane { position:relative; border-bottom:1px solid var(--line-soft); }
+.lane:last-child { border-bottom:0; }
+.lane-name { position:sticky; left:0; z-index:3; float:left; width:96px; padding:7px 8px;
+             font-size:11px; font-weight:700; color:var(--muted); background:var(--surface);
+             text-transform:uppercase; letter-spacing:.05em; border-right:1px solid var(--line-soft); }
+.chip { position:absolute; height:22px; border-radius:6px; padding:0 6px; font-size:10.5px;
+        line-height:21px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+        border:1px solid transparent; cursor:pointer; color:var(--chip-ink);
+        background:hsl(var(--ph-h) var(--ph-s) var(--ph-l)); text-align:left; font-family:inherit; }
+.chip:hover, .chip:focus-visible { outline:2px solid var(--accent); outline-offset:1px; z-index:4; }
+.chip.done { opacity:.42; text-decoration:line-through; }
+.chip.prog { box-shadow:inset 3px 0 0 var(--good); }
+.chip.block { box-shadow:inset 3px 0 0 var(--crit); }
+.chip.dec { font-weight:700; box-shadow:inset 3px 0 0 var(--warn); }
+.chip.site { font-weight:700; }
+.today { position:absolute; top:0; bottom:0; width:2px; background:var(--crit); z-index:2; }
+.today span { position:absolute; top:2px; left:3px; font-size:9px; font-family:var(--font-mono);
+              color:var(--crit); font-weight:700; letter-spacing:.06em; }
+.board { display:grid; grid-template-columns:repeat(4,minmax(210px,1fr)); gap:12px; margin-top:16px; }
+.col { background:var(--surface-2); border:1px solid var(--line); border-radius:12px; padding:10px; min-width:0; }
+.col h2 { font-family:var(--font-display); font-size:13px; font-weight:700; margin:0 0 9px;
+          display:flex; align-items:center; gap:7px; letter-spacing:-.005em; }
+.col h2 i { width:8px; height:8px; border-radius:50%; flex:0 0 auto; }
+.col h2 em { margin-left:auto; font-style:normal; font-family:var(--font-mono); font-size:11px;
+             color:var(--muted); font-variant-numeric:tabular-nums; }
+.cards { display:flex; flex-direction:column; gap:8px; min-height:40px; }
+.card { background:var(--surface); border:1px solid var(--line);
+        border-left:3px solid hsl(var(--ph-h) 45% 52%); border-radius:9px; padding:9px 10px;
+        box-shadow:var(--shadow); }
+.card .t { font-size:12.5px; font-weight:600; line-height:1.32; }
+.card .meta { display:flex; flex-wrap:wrap; gap:5px; align-items:center; margin-top:7px;
+              font-size:10.5px; color:var(--muted); font-family:var(--font-mono); }
+.tag { border:1px solid var(--line); border-radius:999px; padding:1px 7px; font-size:10px; letter-spacing:.03em; }
+.tag.own { background:var(--accent-soft); border-color:transparent; color:var(--fg); font-weight:600; }
+.tag.late { background:var(--crit); border-color:transparent; color:#fff; font-weight:700; }
+.empty { color:var(--muted); font-size:12px; padding:10px 2px; font-style:italic; }
+.gh { display:inline-flex; align-items:center; gap:5px; margin-top:8px; font-size:11.5px;
+      font-weight:600; color:var(--accent); text-decoration:none; }
+.gh:hover { text-decoration:underline; }
+.detail[hidden] { display:none !important; }
+.detail { position:fixed; left:0; right:0; bottom:0; z-index:20; background:var(--surface);
+  border-top:1px solid var(--line); box-shadow:0 -8px 28px rgba(0,0,0,.14);
+  padding:16px max(18px,env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px)); }
+.detail .inner { max-width:1240px; margin:0 auto; }
+.detail h3 { font-family:var(--font-display); font-size:16px; margin:0 0 6px; font-weight:700;
+             padding-right:40px; text-wrap:balance; }
+.detail p { margin:0 0 10px; font-size:13px; color:var(--muted); max-width:72ch; }
+.detail .row { display:flex; flex-wrap:wrap; gap:7px; align-items:center; }
+.detail .x { position:absolute; top:12px; right:max(16px,env(safe-area-inset-right,0px));
+  border:1px solid var(--line); background:var(--surface); color:var(--muted); border-radius:8px;
+  width:30px; height:30px; font-size:17px; line-height:1; cursor:pointer; }
+.note { margin-top:14px; font-size:11.5px; color:var(--muted); max-width:78ch; }
+.note a { color:var(--accent); }
+@media (max-width:820px) { .board { grid-template-columns:1fr; } .counts { width:100%; margin-left:0; } }
+@media (prefers-reduced-motion:reduce) { * { transition:none!important; animation:none!important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>TruWood Q4 Runway</h1>
+      <p class="lede">Every task from the Master BFCM checklist and the strategy deck, Oct&nbsp;27 to Jan&nbsp;5. Status comes from the GitHub issues &mdash; close an issue and it moves to Done here.</p>
+    </div>
+    <div class="counts" id="counts"></div>
+  </header>
+
+  <div class="rail">
+    <div class="seg" role="group" aria-label="View">
+      <button id="vTl" aria-pressed="true">Timeline</button>
+      <button id="vBd" aria-pressed="false">Board</button>
+    </div>
+    <label class="fl">Owner <select id="fOwner"></select></label>
+    <label class="fl">Phase <select id="fPhase"></select></label>
+    <button class="ghost" id="fWeek" aria-pressed="false">Next 7 days</button>
+    <button class="ghost" id="fOpen" aria-pressed="false">Hide done</button>
+    <span class="sync" id="sync">loading&hellip;</span>
+  </div>
+
+  <div id="paneTl">
+    <div class="scroller"><div class="tl" id="tl"></div></div>
+    <p class="note" id="tlnote"></p>
+  </div>
+  <div id="paneBd" hidden><div class="board" id="board"></div></div>
+</div>
+
+<div class="detail" id="detail" hidden>
+  <button class="x" id="dx" aria-label="Close">&times;</button>
+  <div class="inner">
+    <h3 id="dTitle"></h3>
+    <p id="dWhy"></p>
+    <div class="row" id="dMeta"></div>
+    <a class="gh" id="dGh" href="#" target="_blank" rel="noopener" hidden>Open the issue to comment or attach a file &rarr;</a>
+  </div>
+</div>
+
+<script>
+/* ---- the one thing to change if the repo moves ---- */
+const REPO = "jnmaldonado21/truwoodholidaymarketingtracker";
+
+const START = new Date("2026-10-26T00:00:00"), END = new Date("2027-01-11T00:00:00");
+const TODAY = new Date().toISOString().slice(0, 10) < "2026-10-27"
+  ? "2026-10-27" : new Date().toISOString().slice(0, 10);
+const PXD = 22, LANEW = 96;
+const STATUSES = ["Not Started", "In progress", "Blocked", "Done"];
+const SCOL = { "Not Started":"var(--muted)", "In progress":"var(--good)", "Blocked":"var(--crit)", "Done":"var(--accent)" };
+const PHUE = { "October - Acquisition":42, "Phase 1 - Hype":212, "Phase 2 - Bundles":162,
+  "Phase 3 - Product Drop":30, "Phase 4 - BOGO 75%":150, "Giving Tuesday":128,
+  "Christmas Sale":8, "Green Monday":186, "Gift Card Window":46, "Gift Yourself":96 };
+const PHASE_ORDER = Object.keys(PHUE);
+const LANES = ["Decisions","Site","Taylor","Nolan","GBE","Charlie","J / other"];
+
+let TASKS = [];
+const state = { view:"tl", owner:"", phase:"", week:false, openOnly:false, issues:{}, sel:null };
+
+const dnum = s => Math.round((new Date(s + "T00:00:00") - START) / 864e5);
+const X = s => dnum(s) * PXD;
+const TOTAL = Math.round((END - START) / 864e5) * PXD;
+const fmt = s => new Date(s + "T00:00:00").toLocaleDateString("en-US",
+  { weekday:"short", month:"short", day:"numeric" });
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+
+function statusOf(t) {
+  const iss = state.issues[t.task];
+  if (!iss) return t.status;
+  if (iss.state === "closed") return "Done";
+  if (iss.labels.includes("blocked")) return "Blocked";
+  if (iss.labels.includes("in-progress")) return "In progress";
+  return "Not Started";
+}
+function lane(t) {
+  if (t.type === "Decision") return "Decisions";
+  if (t.type === "Phase day") return "Site";
+  const o = t.owner;
+  if (/Taylor/.test(o)) return "Taylor";
+  if (/Nolan/.test(o)) return "Nolan";
+  if (/GBE/.test(o)) return "GBE";
+  if (/Charlie/.test(o)) return "Charlie";
+  return "J / other";
+}
+function visible() {
+  const wk = new Date(TODAY + "T00:00:00"), lim = new Date(wk.getTime() + 7 * 864e5);
+  return TASKS.filter(t => {
+    if (state.owner && lane(t) !== state.owner) return false;
+    if (state.phase && t.phase !== state.phase) return false;
+    if (state.openOnly && statusOf(t) === "Done") return false;
+    if (state.week) { const d = new Date(t.date + "T00:00:00"); if (d < wk || d > lim) return false; }
+    return true;
+  });
+}
+function renderCounts() {
+  const open = t => statusOf(t) !== "Done";
+  const soon = TASKS.filter(t => t.date >= TODAY && open(t)
+    && new Date(t.date) - new Date(TODAY) <= 7 * 864e5).length;
+  document.getElementById("counts").innerHTML =
+    `<div><b>${TASKS.length}</b>tasks</div><div><b>${soon}</b>next 7 days</div>` +
+    `<div><b>${TASKS.filter(t => t.type === "Decision" && open(t)).length}</b>decisions open</div>` +
+    `<div><b>${TASKS.filter(t => t.type === "Phase day" && open(t)).length}</b>site changes</div>` +
+    `<div><b>${TASKS.filter(t => !open(t)).length}</b>done</div>`;
+}
+function renderTimeline() {
+  const tl = document.getElementById("tl"); tl.innerHTML = ""; tl.style.width = TOTAL + "px";
+  const head = document.createElement("div"); head.className = "tl-head";
+  for (let d = 0; START.getTime() + d * 864e5 < END.getTime(); d += 7) {
+    const dt = new Date(START.getTime() + d * 864e5);
+    const w = document.createElement("div"); w.className = "wk";
+    w.style.left = (d * PXD) + "px"; w.style.width = (7 * PXD) + "px";
+    w.textContent = dt.toLocaleDateString("en-US", { month:"short", day:"numeric" });
+    head.appendChild(w);
+  }
+  tl.appendChild(head);
+  const bands = document.createElement("div"); bands.className = "bands";
+  const seen = {}; TASKS.forEach(t => { (seen[t.phase] = seen[t.phase] || []).push(t.date); });
+  const rows = [];
+  PHASE_ORDER.filter(p => seen[p]).forEach(p => {
+    const ds = seen[p].slice().sort(), x0 = X(ds[0]), x1 = X(ds[ds.length - 1]) + PXD * 2;
+    let r = 0; while (rows[r] && rows[r] > x0 - 3) r++;
+    rows[r] = x1;
+    const b = document.createElement("div"); b.className = "band";
+    b.style.cssText += `left:${x0}px;width:${Math.max(x1 - x0, 46)}px;top:${7 + r * 24}px;--ph-h:${PHUE[p]}`;
+    b.textContent = p.replace(" - ", " "); b.title = p; bands.appendChild(b);
+  });
+  bands.style.height = (rows.length * 24 + 8) + "px";
+  tl.appendChild(bands);
+  const vis = visible(); let any = false;
+  LANES.forEach(ln => {
+    const items = vis.filter(t => lane(t) === ln).sort((a, b) => a.date.localeCompare(b.date));
+    if (!items.length) return;
+    any = true;
+    const el = document.createElement("div"); el.className = "lane";
+    const nm = document.createElement("div"); nm.className = "lane-name"; nm.textContent = ln;
+    el.appendChild(nm);
+    const ends = [];
+    items.forEach(t => {
+      const x = Math.max(X(t.date), LANEW + 4), w = 118, st = statusOf(t);
+      let r = 0; while (ends[r] !== undefined && ends[r] > x - 4) r++;
+      ends[r] = x + w;
+      const c = document.createElement("button"); c.type = "button";
+      c.className = "chip" + (st === "Done" ? " done" : st === "In progress" ? " prog" : st === "Blocked" ? " block" : "")
+        + (t.type === "Decision" ? " dec" : t.type === "Phase day" ? " site" : "");
+      c.style.cssText += `left:${x}px;width:${w}px;top:${5 + r * 26}px;--ph-h:${PHUE[t.phase] || 40}`;
+      c.textContent = t.task.replace(/^PHASE DAY - /, "").replace(/^DECISION \d+: /, "");
+      c.title = fmt(t.date) + " — " + t.task;
+      c.onclick = () => openDetail(t);
+      el.appendChild(c);
+    });
+    el.style.height = Math.max(ends.length * 26 + 10, 36) + "px";
+    tl.appendChild(el);
+  });
+  if (!any) { const e = document.createElement("div"); e.className = "empty";
+    e.style.padding = "24px"; e.textContent = "No tasks match these filters."; tl.appendChild(e); }
+  const tod = document.createElement("div"); tod.className = "today";
+  tod.style.left = X(TODAY) + "px"; tod.innerHTML = "<span>TODAY</span>"; tl.appendChild(tod);
+  document.getElementById("tlnote").innerHTML =
+    "Scroll sideways for December. Each chip sits on the day the work is due &mdash; click one for the detail " +
+    "and a link to its issue. Gold edge is a decision, bold is a storefront change.";
+}
+function renderBoard() {
+  const b = document.getElementById("board"); b.innerHTML = "";
+  const vis = visible();
+  STATUSES.forEach(st => {
+    const col = document.createElement("div"); col.className = "col";
+    const items = vis.filter(t => statusOf(t) === st).sort((a, c) => a.date.localeCompare(c.date));
+    const h = document.createElement("h2");
+    h.innerHTML = `<i style="background:${SCOL[st]}"></i>${st}<em>${items.length}</em>`;
+    col.appendChild(h);
+    const list = document.createElement("div"); list.className = "cards";
+    if (!items.length) { const e = document.createElement("div"); e.className = "empty";
+      e.textContent = "Nothing here."; list.appendChild(e); }
+    items.forEach(t => list.appendChild(card(t)));
+    col.appendChild(list); b.appendChild(col);
+  });
+}
+function card(t) {
+  const c = document.createElement("div"); c.className = "card";
+  c.style.cssText += `--ph-h:${PHUE[t.phase] || 40}`;
+  const late = t.date < TODAY && statusOf(t) !== "Done";
+  const title = document.createElement("div"); title.className = "t";
+  title.textContent = t.task; title.style.cursor = "pointer";
+  title.onclick = () => openDetail(t); c.appendChild(title);
+  const m = document.createElement("div"); m.className = "meta";
+  m.innerHTML = `<span class="tag own">${esc(t.owner)}</span>` +
+    `<span class="tag${late ? " late" : ""}">${late ? "OVERDUE " : ""}${fmt(t.date)}</span>` +
+    `<span class="tag">${esc(t.phase.replace(" - ", " "))}</span>`;
+  c.appendChild(m);
+  const iss = state.issues[t.task];
+  if (iss) {
+    const a = document.createElement("a"); a.className = "gh"; a.href = iss.url;
+    a.target = "_blank"; a.rel = "noopener";
+    a.textContent = "#" + iss.number + " — comment or attach →";
+    c.appendChild(a);
+  }
+  return c;
+}
+function openDetail(t) {
+  state.sel = t;
+  document.getElementById("dTitle").textContent = t.task;
+  document.getElementById("dWhy").textContent = t.why || "";
+  const meta = document.getElementById("dMeta"); meta.innerHTML = "";
+  const bits = [["Status", statusOf(t)], ["Owner", t.owner], ["Due", fmt(t.date)],
+                ["Phase", t.phase], ["Type", t.type]];
+  if (t.orig) bits.push(["Checklist said", t.orig]);
+  bits.forEach(([k, v]) => { const s = document.createElement("span"); s.className = "tag";
+    s.textContent = k + ": " + v; meta.appendChild(s); });
+  const gh = document.getElementById("dGh"), iss = state.issues[t.task];
+  if (iss) { gh.href = iss.url; gh.hidden = false;
+    gh.textContent = "Open issue #" + iss.number + " to comment or attach a file →"; }
+  else { gh.hidden = true; }
+  document.getElementById("detail").hidden = false;
+}
+document.getElementById("dx").onclick = () => { document.getElementById("detail").hidden = true; };
+document.addEventListener("keydown", e => { if (e.key === "Escape") document.getElementById("detail").hidden = true; });
+
+function render() { renderCounts(); if (state.view === "tl") renderTimeline(); else renderBoard(); }
+function setSync(html, bad) {
+  const el = document.getElementById("sync");
+  el.innerHTML = html; el.style.color = bad ? "var(--crit)" : "var(--muted)";
+}
+function buildFilters() {
+  const o = document.getElementById("fOwner");
+  o.innerHTML = '<option value="">Everyone</option>' + LANES.map(l => `<option>${l}</option>`).join("");
+  o.onchange = () => { state.owner = o.value; render(); };
+  const p = document.getElementById("fPhase");
+  p.innerHTML = '<option value="">All phases</option>' +
+    PHASE_ORDER.map(x => `<option value="${esc(x)}">${esc(x.replace(" - ", " "))}</option>`).join("");
+  p.onchange = () => { state.phase = p.value; render(); };
+  const wk = document.getElementById("fWeek");
+  wk.onclick = () => { state.week = !state.week; wk.setAttribute("aria-pressed", state.week); render(); };
+  const op = document.getElementById("fOpen");
+  op.onclick = () => { state.openOnly = !state.openOnly; op.setAttribute("aria-pressed", state.openOnly); render(); };
+  const a = document.getElementById("vTl"), b = document.getElementById("vBd");
+  a.onclick = () => { state.view = "tl"; a.setAttribute("aria-pressed","true"); b.setAttribute("aria-pressed","false");
+    document.getElementById("paneTl").hidden = false; document.getElementById("paneBd").hidden = true; render(); };
+  b.onclick = () => { state.view = "bd"; b.setAttribute("aria-pressed","true"); a.setAttribute("aria-pressed","false");
+    document.getElementById("paneBd").hidden = false; document.getElementById("paneTl").hidden = true; render(); };
+}
+
+/* GitHub issues are the source of truth for status. Unauthenticated reads are
+   limited to 60/hour per IP, so a successful fetch is cached for 5 minutes. */
+async function loadIssues() {
+  const CK = "tw-q4-issues";
+  try {
+    const c = JSON.parse(localStorage.getItem(CK) || "null");
+    if (c && Date.now() - c.at < 3e5) { apply(c.rows); setSync(cacheMsg(c.rows.length)); return; }
+  } catch (e) { /* cache unavailable, fetch fresh */ }
+  try {
+    const rows = [];
+    for (let page = 1; page <= 3; page++) {
+      const r = await fetch(`https://api.github.com/repos/${REPO}/issues?state=all&per_page=100&page=${page}`,
+                            { headers: { Accept: "application/vnd.github+json" } });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const batch = await r.json();
+      if (!Array.isArray(batch) || !batch.length) break;
+      batch.filter(i => !i.pull_request).forEach(i => rows.push({
+        title: i.title, number: i.number, url: i.html_url, state: i.state,
+        labels: (i.labels || []).map(l => l.name)
+      }));
+      if (batch.length < 100) break;
+    }
+    apply(rows);
+    try { localStorage.setItem(CK, JSON.stringify({ at: Date.now(), rows })); } catch (e) { /* no cache */ }
+    setSync(cacheMsg(rows.length));
+  } catch (err) {
+    setSync(`showing the plan as written &mdash; <a href="https://github.com/${REPO}/issues" target="_blank" rel="noopener">issues</a>`, false);
+  }
+}
+function cacheMsg(n) {
+  return `${n} issues &middot; <a href="https://github.com/${REPO}/issues" target="_blank" rel="noopener">open in GitHub</a>`;
+}
+function apply(rows) {
+  const m = {}; rows.forEach(r => { m[r.title] = r; });
+  state.issues = m; render();
+}
+
+(async () => {
+  buildFilters();
+  try {
+    const r = await fetch("tasks.json", { cache: "no-cache" });
+    TASKS = await r.json();
+  } catch (e) {
+    document.getElementById("tl").innerHTML =
+      '<div class="empty" style="padding:24px">Could not load tasks.json. It needs to sit next to this page in the repo.</div>';
+    setSync("tasks.json missing", true);
+    return;
+  }
+  render();
+  const s = document.querySelector(".scroller");
+  if (s) s.scrollLeft = Math.max(0, X(TODAY) - 140);
+  loadIssues();
+})();
+</script>
+</body>
+</html>
